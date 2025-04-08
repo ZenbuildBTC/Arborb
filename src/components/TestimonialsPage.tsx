@@ -458,8 +458,18 @@ const TestimonialsPage = () => {
           </p>
 
           <div className="flex space-x-[30px]">
-            <p className="text-[#575757] text-sm">Privacy Policy</p>
-            <p className="text-[#575757] text-sm">Terms of Service</p>
+            <Link
+              to="/privacy-policy"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </footer>

@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { useRoutes, Routes, Route } from "react-router-dom";
+// @ts-ignore
 import routes from "tempo-routes";
 
 const ArborWebsite = lazy(() => import("./components/ArborWebsite"));
@@ -8,6 +9,8 @@ const ServicesPage = lazy(() => import("./components/ServicesPage"));
 const SolutionsPage = lazy(() => import("./components/SolutionsPage"));
 const ContactPage = lazy(() => import("./components/ContactPage"));
 const TestimonialsPage = lazy(() => import("./components/TestimonialsPage"));
+const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("./components/TermsOfService"));
 
 function App() {
   return (
@@ -26,6 +29,8 @@ function App() {
           <Route path="/solutions" element={<SolutionsPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/testimonials" element={<TestimonialsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           {import.meta.env.VITE_TEMPO && <Route path="/tempobook/*" />}
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}

@@ -227,6 +227,94 @@ const ArborWebsite = () => {
         </div>
       </section>
 
+      {/* AI Websites Section */}
+      <section className="w-full px-4 md:px-[155px] py-[60px] bg-[#f9f9f9]">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <div className="w-full md:w-[600px]">
+            <h2 className="text-[#1e1e1e] text-3xl md:text-4xl font-bold mb-[30px]">
+              Free AI-Built Websites for Retail Businesses
+            </h2>
+
+            <p className="text-[#575757] text-lg md:text-xl leading-[32px] mb-[30px]">
+              Arbor is proud to offer{" "}
+              <span className="font-bold text-[#2e7d32]">
+                free AI-built websites
+              </span>{" "}
+              for retail businesses in the UK. Our cutting-edge AI technology
+              creates professional, responsive brochure websites that showcase
+              your products and services effectively.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px] mb-[30px]">
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  5 Pages Free
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Get up to 5 professionally designed pages at no cost to your
+                  business.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Additional Pages
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Need more content? Add 5 more pages for just £200.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Mobile Responsive
+                </h4>
+                <p className="text-[#575757] text-base">
+                  All websites are fully responsive and look great on any
+                  device.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Quick Turnaround
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Get your professional website up and running in days, not
+                  weeks.
+                </p>
+              </div>
+            </div>
+
+            <Link
+              to="/contact"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+            >
+              Get Your Free Website
+            </Link>
+          </div>
+
+          <div className="w-full md:w-[500px] h-[400px] md:h-[500px] relative">
+            <div className="w-full h-full bg-white rounded-[20px] shadow-[0px_20px_50px_rgba(0,0,0,0.1)] p-[20px] relative overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?w=800&q=80"
+                alt="AI Website Design"
+                className="w-full h-full object-cover rounded-[10px]"
+              />
+              <div className="absolute inset-0 bg-[#2e7d32]/10 rounded-[10px]"></div>
+              <div className="absolute bottom-0 left-0 w-full bg-white/80 p-[20px]">
+                <h3 className="text-[#2e7d32] text-2xl font-bold">
+                  AI-Powered Design
+                </h3>
+                <p className="text-[#575757] text-lg">
+                  Modern websites for retail businesses
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="w-full px-4 md:px-[155px] py-[60px]">
         <div className="w-full h-auto md:h-[400px] bg-[#2e7d32] rounded-tl-[35px] rounded-tr-lg rounded-bl-lg rounded-br-[35px] px-6 md:px-[75px] py-10 md:py-[68px] flex flex-col md:flex-row justify-between">
@@ -334,8 +422,18 @@ const ArborWebsite = () => {
           </p>
 
           <div className="flex space-x-[30px]">
-            <p className="text-[#575757] text-sm">Privacy Policy</p>
-            <p className="text-[#575757] text-sm">Terms of Service</p>
+            <Link
+              to="/privacy-policy"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </footer>

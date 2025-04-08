@@ -99,20 +99,39 @@ const ContactPage = () => {
               Send Us a Message
             </h2>
 
-            <form className="space-y-[30px]">
+            <form
+              className="space-y-[30px]"
+              action="https://formspree.io/f/xleqgwkj"
+              method="POST"
+              onSubmit={(e) => {
+                const form = e.target as HTMLFormElement;
+                const formData = new FormData(form);
+                const name = formData.get("name") as string;
+                if (name) {
+                  localStorage.setItem("arbor_contact_name", name);
+                  setTimeout(() => {
+                    alert(
+                      `Thank you for contacting us, ${name}! We'll get back to you shortly.`,
+                    );
+                  }, 1000);
+                }
+              }}
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
                 <div>
                   <label
                     className="block text-[#1e1e1e] text-lg font-medium mb-[10px]"
                     htmlFor="name"
                   >
-                    Name
+                    Name *
                   </label>
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     className="w-full h-[60px] bg-white border border-[#e0e0e0] rounded-[10px] px-[20px] text-lg focus:outline-none focus:border-[#2e7d32]"
                     placeholder="Your name"
+                    required
                   />
                 </div>
 
@@ -121,13 +140,15 @@ const ContactPage = () => {
                     className="block text-[#1e1e1e] text-lg font-medium mb-[10px]"
                     htmlFor="email"
                   >
-                    Email
+                    Email *
                   </label>
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     className="w-full h-[60px] bg-white border border-[#e0e0e0] rounded-[10px] px-[20px] text-lg focus:outline-none focus:border-[#2e7d32]"
                     placeholder="Your email"
+                    required
                   />
                 </div>
               </div>
@@ -142,6 +163,7 @@ const ContactPage = () => {
                 <input
                   type="text"
                   id="company"
+                  name="company"
                   className="w-full h-[60px] bg-white border border-[#e0e0e0] rounded-[10px] px-[20px] text-lg focus:outline-none focus:border-[#2e7d32]"
                   placeholder="Your company"
                 />
@@ -152,13 +174,15 @@ const ContactPage = () => {
                   className="block text-[#1e1e1e] text-lg font-medium mb-[10px]"
                   htmlFor="subject"
                 >
-                  Subject
+                  Subject *
                 </label>
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   className="w-full h-[60px] bg-white border border-[#e0e0e0] rounded-[10px] px-[20px] text-lg focus:outline-none focus:border-[#2e7d32]"
                   placeholder="Subject"
+                  required
                 />
               </div>
 
@@ -167,13 +191,32 @@ const ContactPage = () => {
                   className="block text-[#1e1e1e] text-lg font-medium mb-[10px]"
                   htmlFor="message"
                 >
-                  Message
+                  Message *
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   className="w-full h-[200px] bg-white border border-[#e0e0e0] rounded-[10px] p-[20px] text-lg focus:outline-none focus:border-[#2e7d32] resize-none"
                   placeholder="Your message"
+                  required
                 ></textarea>
+              </div>
+
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  id="interest-website"
+                  name="interest"
+                  value="free-ai-website"
+                  className="mt-1 mr-3"
+                />
+                <label
+                  htmlFor="interest-website"
+                  className="text-[#575757] text-base"
+                >
+                  I'm interested in a free AI-built website for my retail
+                  business
+                </label>
               </div>
 
               <button
@@ -202,7 +245,7 @@ const ContactPage = () => {
                       Our Office
                     </h3>
                     <p className="text-[#575757] text-lg">
-                      123 Business Street, London, UK
+                      167-169 Great Portland Street, 5th Floor, London, W1W 5PF
                     </p>
                   </div>
                 </div>
@@ -216,56 +259,10 @@ const ContactPage = () => {
                     <h3 className="text-[#1e1e1e] text-xl font-bold mb-[5px]">
                       Email Us
                     </h3>
-                    <p className="text-[#575757] text-lg">contact@arbor.com</p>
-                    <p className="text-[#575757] text-lg">support@arbor.com</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-[60px] h-[60px] bg-[#2e7d32]/10 rounded-full flex items-center justify-center mr-[20px]">
-                    <Phone className="w-6 h-6 text-[#2e7d32]" />
-                  </div>
-
-                  <div>
-                    <h3 className="text-[#1e1e1e] text-xl font-bold mb-[5px]">
-                      Call Us
-                    </h3>
                     <p className="text-[#575757] text-lg">
-                      +44 (0) 123 456 7890
-                    </p>
-                    <p className="text-[#575757] text-lg">
-                      +44 (0) 987 654 3210
+                      hello@arborpaygo.com
                     </p>
                   </div>
-                </div>
-              </div>
-
-              <div className="mt-[40px]">
-                <h3 className="text-[#1e1e1e] text-xl font-bold mb-[20px]">
-                  Follow Us
-                </h3>
-
-                <div className="flex space-x-[20px]">
-                  <a
-                    href="#"
-                    className="w-[50px] h-[50px] bg-[#2e7d32]/10 rounded-full flex items-center justify-center hover:bg-[#2e7d32] group transition-colors duration-300"
-                  >
-                    <Facebook className="w-6 h-6 text-[#2e7d32] group-hover:text-white transition-colors duration-300" />
-                  </a>
-
-                  <a
-                    href="#"
-                    className="w-[50px] h-[50px] bg-[#2e7d32]/10 rounded-full flex items-center justify-center hover:bg-[#2e7d32] group transition-colors duration-300"
-                  >
-                    <Twitter className="w-6 h-6 text-[#2e7d32] group-hover:text-white transition-colors duration-300" />
-                  </a>
-
-                  <a
-                    href="#"
-                    className="w-[50px] h-[50px] bg-[#2e7d32]/10 rounded-full flex items-center justify-center hover:bg-[#2e7d32] group transition-colors duration-300"
-                  >
-                    <Instagram className="w-6 h-6 text-[#2e7d32] group-hover:text-white transition-colors duration-300" />
-                  </a>
                 </div>
               </div>
             </div>
@@ -331,9 +328,11 @@ const ContactPage = () => {
               How quickly can you implement payment solutions?
             </h3>
             <p className="text-[#575757] text-lg">
-              Most of our payment solutions can be implemented within 1-2 weeks,
-              depending on the complexity of your existing systems and
-              integration requirements.
+              Our card payments services can be activated on the same day you
+              are approved, which is most cases can be a few hours. So you can
+              start taking payments right away. For more complex systems which
+              require integration, it all depends on the requirements. However,
+              1-2 weeks is a usual time frame for most clients.
             </p>
           </div>
 
@@ -353,7 +352,7 @@ const ContactPage = () => {
               How much funding can I apply for?
             </h3>
             <p className="text-[#575757] text-lg">
-              Our business funding solutions range from £10,000 to £1 million,
+              Our business funding solutions range from £1,000 to £1 million,
               depending on your business needs, revenue, and credit history.
             </p>
           </div>
@@ -380,12 +379,6 @@ const ContactPage = () => {
               UK-based business growth consultancy specializing in payment
               solutions, business funding, and restaurant booking apps.
             </p>
-
-            <div className="mt-[30px] flex space-x-4">
-              <Facebook className="w-6 h-6 text-[#2e7d32]" />
-              <Twitter className="w-6 h-6 text-[#2e7d32]" />
-              <Instagram className="w-6 h-6 text-[#2e7d32]" />
-            </div>
           </div>
 
           <div className="w-[200px]">
@@ -430,9 +423,10 @@ const ContactPage = () => {
             <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
 
             <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">contact@arbor.com</p>
-              <p className="text-[#575757] text-base">+44 (0) 123 456 7890</p>
-              <p className="text-[#575757] text-base">London, United Kingdom</p>
+              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
+              <p className="text-[#575757] text-base">
+                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
+              </p>
             </div>
           </div>
         </div>
@@ -445,8 +439,18 @@ const ContactPage = () => {
           </p>
 
           <div className="flex space-x-[30px]">
-            <p className="text-[#575757] text-sm">Privacy Policy</p>
-            <p className="text-[#575757] text-sm">Terms of Service</p>
+            <Link
+              to="/privacy-policy"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </footer>

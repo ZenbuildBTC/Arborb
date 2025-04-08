@@ -17,7 +17,7 @@ const SolutionsPage = () => {
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -365,6 +365,103 @@ const SolutionsPage = () => {
         </div>
       </section>
 
+      {/* AI Websites Section */}
+      <section className="w-full px-4 md:px-[152px] py-[80px]">
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+          <div className="w-full md:w-[550px] h-[400px] md:h-[550px] relative hidden md:block">
+            <div className="w-[500px] h-[500px] bg-white rounded-[20px] shadow-[0px_20px_50px_rgba(0,0,0,0.1)] p-[40px] absolute top-0 right-0">
+              <div className="w-full h-full bg-[#f5f5f5] rounded-[10px] flex items-center justify-center relative overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+                  alt="AI Website Solution"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[#2e7d32]/10"></div>
+                <div className="absolute bottom-0 left-0 w-full bg-white/80 p-[20px]">
+                  <h3 className="text-[#2e7d32] text-2xl font-bold">
+                    AI-Powered Websites
+                  </h3>
+                  <p className="text-[#575757] text-lg">
+                    Free brochure sites for retail businesses
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full md:w-[500px]">
+            <div className="flex items-center mb-[20px]">
+              <div className="w-[156px] h-[35px] bg-[#2e7d32]/10 rounded flex items-center justify-center">
+                <span className="text-[#2e7d32] text-lg font-semibold uppercase">
+                  NEW SOLUTION
+                </span>
+              </div>
+              <div className="w-24 h-0 border-2 border-[#2e7d32] ml-5"></div>
+            </div>
+
+            <h2 className="text-[#1e1e1e] text-3xl md:text-4xl font-bold mb-[30px]">
+              AI-Built Retail Websites
+            </h2>
+
+            <p className="text-[#575757] text-lg md:text-xl leading-[32px] mb-[30px]">
+              Arbor Pay Go now offers completely{" "}
+              <span className="font-bold text-[#2e7d32]">
+                free AI-built websites
+              </span>{" "}
+              for retail businesses across the UK. Our cutting-edge AI
+              technology creates professional brochure websites that showcase
+              your products and services effectively, helping you establish a
+              strong online presence without the high costs.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px] mb-[30px]">
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Free 5-Page Websites
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Get a professional 5-page website at absolutely no cost.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Affordable Expansion
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Add 5 more pages for just £200 when you need to grow.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Fully Responsive
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Websites that look perfect on desktops, tablets, and phones.
+                </p>
+              </div>
+
+              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
+                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                  Working Contact Forms
+                </h4>
+                <p className="text-[#575757] text-base">
+                  Real, functional contact forms to connect with customers.
+                </p>
+              </div>
+            </div>
+
+            <Link
+              to="/contact"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+            >
+              Get Your Free Website
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Case Studies */}
       <section className="w-full px-4 md:px-[152px] py-[80px]">
         <h2 className="text-[#1e1e1e] text-3xl md:text-4xl font-bold text-center mb-[40px] md:mb-[60px]">
@@ -395,7 +492,7 @@ const SolutionsPage = () => {
               </p>
 
               <Link
-                to="/contact"
+                to="/case-studies/restaurant-booking-case-study"
                 className="flex items-center text-[#2e7d32] font-semibold"
               >
                 Read full case study <ChevronRight className="w-5 h-5 ml-1" />
@@ -426,7 +523,7 @@ const SolutionsPage = () => {
               </p>
 
               <Link
-                to="/contact"
+                to="/case-studies/payment-solution-case-study"
                 className="flex items-center text-[#2e7d32] font-semibold"
               >
                 Read full case study <ChevronRight className="w-5 h-5 ml-1" />
@@ -457,7 +554,7 @@ const SolutionsPage = () => {
               </p>
 
               <Link
-                to="/contact"
+                to="/case-studies/business-funding-case-study"
                 className="flex items-center text-[#2e7d32] font-semibold"
               >
                 Read full case study <ChevronRight className="w-5 h-5 ml-1" />
@@ -502,17 +599,11 @@ const SolutionsPage = () => {
       <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
         <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
           <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
+            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor Pay Go</h2>
             <p className="text-[#575757] text-base mt-4">
               UK-based business growth consultancy specializing in payment
               solutions, business funding, and restaurant booking apps.
             </p>
-
-            <div className="mt-[30px] flex space-x-4">
-              <Facebook className="w-6 h-6 text-[#2e7d32]" />
-              <Twitter className="w-6 h-6 text-[#2e7d32]" />
-              <Instagram className="w-6 h-6 text-[#2e7d32]" />
-            </div>
           </div>
 
           <div className="w-[200px]">
@@ -541,9 +632,15 @@ const SolutionsPage = () => {
               <Link to="/about" className="text-[#575757] text-base block">
                 About Us
               </Link>
-              <p className="text-[#575757] text-base">Our Team</p>
-              <p className="text-[#575757] text-base">Testimonials</p>
-              <p className="text-[#575757] text-base">Blog</p>
+              <Link
+                to="/testimonials"
+                className="text-[#575757] text-base block"
+              >
+                Testimonials
+              </Link>
+              <Link to="/blog" className="text-[#575757] text-base block">
+                Blog
+              </Link>
             </div>
           </div>
 
@@ -551,9 +648,10 @@ const SolutionsPage = () => {
             <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
 
             <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">contact@arbor.com</p>
-              <p className="text-[#575757] text-base">+44 (0) 123 456 7890</p>
-              <p className="text-[#575757] text-base">London, United Kingdom</p>
+              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
+              <p className="text-[#575757] text-base">
+                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
+              </p>
             </div>
           </div>
         </div>
@@ -562,12 +660,22 @@ const SolutionsPage = () => {
 
         <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
           <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
+            © 2023 Arbor Pay Go. All rights reserved.
           </p>
 
           <div className="flex space-x-[30px]">
-            <p className="text-[#575757] text-sm">Privacy Policy</p>
-            <p className="text-[#575757] text-sm">Terms of Service</p>
+            <Link
+              to="/privacy-policy"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </footer>

@@ -10,9 +10,13 @@ const SEOHead = ({
   ogType = "website",
   twitterCard = "summary_large_image",
 }) => {
+  // Ensure all titles include "Arbor Pay Go"
+  const formattedTitle = title.includes("Arbor Pay Go")
+    ? title
+    : `${title} | Arbor Pay Go`;
   return (
     <Helmet>
-      <title>{title}</title>
+      <title>{formattedTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <link rel="canonical" href={canonicalUrl} />
@@ -20,14 +24,14 @@ const SEOHead = ({
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={formattedTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
 
       {/* Twitter */}
       <meta property="twitter:card" content={twitterCard} />
       <meta property="twitter:url" content={canonicalUrl} />
-      <meta property="twitter:title" content={title} />
+      <meta property="twitter:title" content={formattedTitle} />
       <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={ogImage} />
 
@@ -37,7 +41,7 @@ const SEOHead = ({
           {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "Arbor",
+            "name": "Arbor Pay Go",
             "url": "https://arbor.com",
             "logo": "https://arbor.com/images/logo.png",
             "contactPoint": {

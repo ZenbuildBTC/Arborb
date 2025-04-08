@@ -6,6 +6,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 5 - 2rem * 5));
+  }
+}
+
+.animate-carousel {
+  animation: carousel 30s linear infinite;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

@@ -1,4 +1,8 @@
+# Arbor Website Robots.txt
+
 User-agent: *
 Allow: /
+Disallow: /tempobook/
 
+# Sitemaps
 Sitemap: https://arbor.com/sitemap.xml

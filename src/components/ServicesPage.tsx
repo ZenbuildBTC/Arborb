@@ -460,6 +460,123 @@ const ServicesPage = () => {
         </div>
       </section>
 
+      {/* AI Websites Section */}
+      <section className="w-full px-4 md:px-[152px] py-[80px] bg-[#f9f9f9]">
+        <div className="flex flex-col items-center mb-[40px]">
+          <div className="flex items-center mb-[20px]">
+            <div className="w-[156px] h-[35px] bg-[#2e7d32]/10 rounded flex items-center justify-center">
+              <span className="text-[#2e7d32] text-lg font-semibold uppercase">
+                NEW SERVICE
+              </span>
+            </div>
+            <div className="w-24 h-0 border-2 border-[#2e7d32] ml-5"></div>
+          </div>
+          <h2 className="text-[#1e1e1e] text-3xl md:text-4xl font-bold mb-[20px] text-center">
+            Free AI-Built Websites
+          </h2>
+        </div>
+
+        <div className="max-w-[900px] mx-auto bg-white rounded-[20px] p-[40px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)]">
+          <p className="text-[#575757] text-lg md:text-xl leading-[32px] mb-[30px]">
+            Arbor is proud to offer{" "}
+            <span className="font-bold text-[#2e7d32]">
+              completely free AI-built websites
+            </span>{" "}
+            for retail businesses across the UK. Our cutting-edge AI technology
+            creates professional, responsive brochure websites that effectively
+            showcase your products and services without any cost to your
+            business.
+          </p>
+
+          <p className="text-[#575757] text-lg md:text-xl leading-[32px] mb-[30px]">
+            Each free website includes 5 professionally designed pages with
+            modern layouts, responsive design for all devices, and SEO
+            optimization to help customers find your business online. For
+            businesses requiring additional content, we offer an affordable
+            expansion option of 5 more pages for just £200.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] mb-[30px]">
+            <div className="bg-[#f9f9f9] rounded-[15px] p-[20px]">
+              <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                What's Included:
+              </h4>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">
+                    5 professionally designed pages
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">
+                    Mobile-responsive design
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">SEO optimization</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">
+                    Contact form integration
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">Fast loading speeds</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-[#f9f9f9] rounded-[15px] p-[20px]">
+              <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
+                Perfect For:
+              </h4>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">
+                    Retail stores and boutiques
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">
+                    Professional service providers
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">Restaurants and cafés</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">Beauty salons and spas</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-[#2e7d32] mr-2">✓</span>
+                  <span className="text-[#575757]">
+                    Fitness studios and gyms
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="flex justify-center mt-8">
+            <Link
+              to="/contact"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+            >
+              Request Your Free Website
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="w-full px-4 md:px-[152px] py-[80px]">
         <div className="w-full bg-[#2e7d32] rounded-[20px] px-6 md:px-[60px] py-[60px] flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
@@ -500,12 +617,6 @@ const ServicesPage = () => {
               UK-based business growth consultancy specializing in payment
               solutions, business funding, and restaurant booking apps.
             </p>
-
-            <div className="mt-[30px] flex space-x-4">
-              <Facebook className="w-6 h-6 text-[#2e7d32]" />
-              <Twitter className="w-6 h-6 text-[#2e7d32]" />
-              <Instagram className="w-6 h-6 text-[#2e7d32]" />
-            </div>
           </div>
 
           <div className="w-[200px]">
@@ -534,9 +645,15 @@ const ServicesPage = () => {
               <Link to="/about" className="text-[#575757] text-base block">
                 About Us
               </Link>
-              <p className="text-[#575757] text-base">Our Team</p>
-              <p className="text-[#575757] text-base">Testimonials</p>
-              <p className="text-[#575757] text-base">Blog</p>
+              <Link
+                to="/testimonials"
+                className="text-[#575757] text-base block"
+              >
+                Testimonials
+              </Link>
+              <Link to="/blog" className="text-[#575757] text-base block">
+                Blog
+              </Link>
             </div>
           </div>
 
@@ -544,9 +661,10 @@ const ServicesPage = () => {
             <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
 
             <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">contact@arbor.com</p>
-              <p className="text-[#575757] text-base">+44 (0) 123 456 7890</p>
-              <p className="text-[#575757] text-base">London, United Kingdom</p>
+              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
+              <p className="text-[#575757] text-base">
+                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
+              </p>
             </div>
           </div>
         </div>
@@ -559,8 +677,18 @@ const ServicesPage = () => {
           </p>
 
           <div className="flex space-x-[30px]">
-            <p className="text-[#575757] text-sm">Privacy Policy</p>
-            <p className="text-[#575757] text-sm">Terms of Service</p>
+            <Link
+              to="/privacy-policy"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              to="/terms-of-service"
+              className="text-[#575757] text-sm hover:text-[#2e7d32]"
+            >
+              Terms of Service
+            </Link>
           </div>
         </div>
       </footer>
