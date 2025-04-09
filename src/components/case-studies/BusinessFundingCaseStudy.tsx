@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, ArrowLeft } from "lucide-react";
 import SEOHead from "../SEOHead.jsx";
 import MobileMenu from "../MobileMenu";
+import Footer from "../Footer";
 
 const BusinessFundingCaseStudy = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,21 +11,21 @@ const BusinessFundingCaseStudy = () => {
   return (
     <div className="w-full bg-white overflow-hidden">
       <SEOHead
-        title="Case Study: Tech Startup Funding | Arbor"
-        description="How Arbor helped a UK tech startup secure £500,000 in funding to scale their operations and expand into new markets."
+        title="Case Study: Tech Startup Funding | Arbor Pay Go"
+        description="How Arbor Pay Go helped a UK tech startup secure £500,000 in funding to scale their operations and expand into new markets."
         keywords="business funding case study, startup funding UK, tech company investment, business growth funding, SME financing solutions"
         canonicalUrl="https://arbor.com/case-studies/business-funding"
         schema={`
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "How a Tech Startup Secured £500K in Funding with Arbor's Help",
-            "description": "Case study of how Arbor helped a UK tech startup secure £500,000 in funding to scale their operations and expand into new markets.",
+            "headline": "How a Tech Startup Secured £500K in Funding with Arbor Pay Go's Help",
+            "description": "Case study of how Arbor Pay Go helped a UK tech startup secure £500,000 in funding to scale their operations and expand into new markets.",
             "image": "https://arbor.com/images/case-studies/business-funding.jpg",
-            "datePublished": "2023-06-10",
+            "datePublished": "2025-06-10",
             "author": {
               "@type": "Organization",
-              "name": "Arbor"
+              "name": "Arbor Pay Go"
             }
           }
         `}
@@ -32,7 +33,7 @@ const BusinessFundingCaseStudy = () => {
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -88,6 +89,10 @@ const BusinessFundingCaseStudy = () => {
         <Link
           to="/solutions"
           className="flex items-center text-[#2e7d32] font-medium hover:underline"
+          onClick={(e) => {
+            // Ensure it navigates to the top of the solutions page
+            window.scrollTo(0, 0);
+          }}
         >
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to Solutions
         </Link>
@@ -106,7 +111,7 @@ const BusinessFundingCaseStudy = () => {
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-[30px]">
-            How a Tech Startup Secured £500K in Funding with Arbor's Help
+            How a Tech Startup Secured £500K in Funding with Arbor Pay Go's Help
           </h1>
 
           <p className="w-full md:w-[800px] text-lg md:text-xl font-medium leading-relaxed text-[#575757] text-center mb-[40px]">
@@ -176,7 +181,7 @@ const BusinessFundingCaseStudy = () => {
               </h2>
 
               <p className="text-[#575757] text-lg leading-[32px] mb-[30px]">
-                Arbor developed a comprehensive funding strategy for
+                Arbor Pay Go developed a comprehensive funding strategy for
                 TechInnovate that included:
               </p>
 
@@ -266,11 +271,11 @@ const BusinessFundingCaseStudy = () => {
               </div>
 
               <p className="text-[#575757] text-lg leading-[32px] mb-[20px]">
-                With Arbor's guidance and support, TechInnovate successfully
-                secured £500,000 in funding from a combination of angel
-                investors and a UK-based venture capital firm specializing in
-                early-stage tech companies. The funding round was completed in
-                just three months, significantly faster than the industry
+                With Arbor Pay Go's guidance and support, TechInnovate
+                successfully secured £500,000 in funding from a combination of
+                angel investors and a UK-based venture capital firm specializing
+                in early-stage tech companies. The funding round was completed
+                in just three months, significantly faster than the industry
                 average.
               </p>
 
@@ -303,12 +308,12 @@ const BusinessFundingCaseStudy = () => {
 
               <div className="border-l-4 border-[#2e7d32] pl-6 py-2 mb-[30px]">
                 <p className="text-[#1e1e1e] text-lg italic">
-                  "Arbor's expertise was invaluable in helping us navigate the
-                  complex funding landscape. Their strategic guidance and
-                  connections to the right investors made all the difference.
-                  The funding we secured has transformed our business, allowing
-                  us to scale rapidly and capitalize on market opportunities we
-                  would have otherwise missed."
+                  "Arbor Pay Go's expertise was invaluable in helping us
+                  navigate the complex funding landscape. Their strategic
+                  guidance and connections to the right investors made all the
+                  difference. The funding we secured has transformed our
+                  business, allowing us to scale rapidly and capitalize on
+                  market opportunities we would have otherwise missed."
                 </p>
                 <p className="text-[#575757] text-base mt-3">
                   - CEO, TechInnovate
@@ -394,13 +399,17 @@ const BusinessFundingCaseStudy = () => {
                 </p>
               </div>
 
-              <Link
-                to="/contact"
+              <a
+                href="#top"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="w-full bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] flex items-center justify-center"
               >
                 Discuss Your Funding Needs{" "}
                 <ChevronRight className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -413,7 +422,10 @@ const BusinessFundingCaseStudy = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          <Link to="/case-studies/payment-solution" className="group">
+          <Link
+            to="/case-studies/payment-solution-case-study"
+            className="group"
+          >
             <div className="bg-white rounded-[20px] overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.05)] transition-transform duration-300 group-hover:transform group-hover:scale-[1.02]">
               <div className="h-[200px] relative overflow-hidden">
                 <img
@@ -447,7 +459,10 @@ const BusinessFundingCaseStudy = () => {
             </div>
           </Link>
 
-          <Link to="/case-studies/restaurant-booking" className="group">
+          <Link
+            to="/case-studies/restaurant-booking-case-study"
+            className="group"
+          >
             <div className="bg-white rounded-[20px] overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.05)] transition-transform duration-300 group-hover:transform group-hover:scale-[1.02]">
               <div className="h-[200px] relative overflow-hidden">
                 <img
@@ -530,12 +545,16 @@ const BusinessFundingCaseStudy = () => {
               your business access the capital it needs to grow and thrive.
             </p>
 
-            <Link
-              to="/contact"
+            <a
+              href="#top"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="bg-white text-[#2e7d32] text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
 
           <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-white/10 rounded-full flex items-center justify-center">
@@ -548,87 +567,7 @@ const BusinessFundingCaseStudy = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
-            <p className="text-[#575757] text-base mt-4">
-              UK-based business growth consultancy specializing in payment
-              solutions, business funding, and restaurant booking apps.
-            </p>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Services</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/services" className="text-[#575757] text-base block">
-                Payment Solutions
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Business Funding
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Booking Apps
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Consultancy
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Company</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/about" className="text-[#575757] text-base block">
-                About Us
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-[#575757] text-base block"
-              >
-                Testimonials
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[250px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
-
-            <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
-              <p className="text-[#575757] text-base">
-                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full h-0 border-t border-[#e0e0e0] mt-[50px]"></div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
-          <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
-          </p>
-
-          <div className="flex space-x-[30px]">
-            <Link
-              to="/privacy-policy"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-of-service"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

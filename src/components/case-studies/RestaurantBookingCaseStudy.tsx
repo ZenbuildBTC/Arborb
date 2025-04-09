@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight, ArrowLeft } from "lucide-react";
 import SEOHead from "../SEOHead.jsx";
 import MobileMenu from "../MobileMenu";
+import Footer from "../Footer";
 
 const RestaurantBookingCaseStudy = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,21 +16,21 @@ const RestaurantBookingCaseStudy = () => {
   return (
     <div className="w-full bg-white overflow-hidden">
       <SEOHead
-        title="Case Study: Restaurant Booking App | Arbor"
-        description="How Arbor's booking app solution helped a UK restaurant chain increase reservations by 45% and improve operational efficiency."
+        title="Case Study: Restaurant Booking App | Arbor Pay Go"
+        description="How Arbor Pay Go's booking app solution helped a UK restaurant chain increase reservations by 45% and improve operational efficiency."
         keywords="restaurant booking app case study, hospitality technology UK, table management system, online reservation system, restaurant booking solution"
         canonicalUrl="https://arbor.com/case-studies/restaurant-booking"
         schema={`
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "How a Restaurant Chain Increased Bookings by 45% with Arbor's App",
-            "description": "Case study of how Arbor implemented a booking app solution for a UK restaurant chain, resulting in 45% more reservations and improved operational efficiency.",
+            "headline": "How a Restaurant Chain Increased Bookings by 45% with Arbor Pay Go's App",
+            "description": "Case study of how Arbor Pay Go implemented a booking app solution for a UK restaurant chain, resulting in 45% more reservations and improved operational efficiency.",
             "image": "https://arbor.com/images/case-studies/restaurant-booking.jpg",
-            "datePublished": "2023-04-20",
+            "datePublished": "2025-04-20",
             "author": {
               "@type": "Organization",
-              "name": "Arbor"
+              "name": "Arbor Pay Go"
             }
           }
         `}
@@ -37,7 +38,7 @@ const RestaurantBookingCaseStudy = () => {
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -93,6 +94,10 @@ const RestaurantBookingCaseStudy = () => {
         <Link
           to="/solutions"
           className="flex items-center text-[#2e7d32] font-medium hover:underline"
+          onClick={(e) => {
+            // Ensure it navigates to the top of the solutions page
+            window.scrollTo(0, 0);
+          }}
         >
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to Solutions
         </Link>
@@ -111,7 +116,8 @@ const RestaurantBookingCaseStudy = () => {
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-[30px]">
-            How a Restaurant Chain Increased Bookings by 45% with Arbor's App
+            How a Restaurant Chain Increased Bookings by 45% with Arbor Pay Go's
+            App
           </h1>
 
           <p className="w-full md:w-[800px] text-lg md:text-xl font-medium leading-relaxed text-[#575757] text-center mb-[40px]">
@@ -180,7 +186,8 @@ const RestaurantBookingCaseStudy = () => {
 
               <p className="text-[#575757] text-lg leading-[32px] mb-[30px]">
                 After a thorough analysis of the restaurant group's needs, Arbor
-                implemented a customized booking app solution that included:
+                Pay Go implemented a customized booking app solution that
+                included:
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-[30px] mb-[30px]">
@@ -302,9 +309,9 @@ const RestaurantBookingCaseStudy = () => {
 
               <div className="border-l-4 border-[#2e7d32] pl-6 py-2 mb-[30px]">
                 <p className="text-[#1e1e1e] text-lg italic">
-                  "Arbor's booking app has completely transformed how we manage
-                  reservations across our restaurants. Not only have we seen a
-                  significant increase in bookings, but the reduction in
+                  "Arbor Pay Go's booking app has completely transformed how we
+                  manage reservations across our restaurants. Not only have we
+                  seen a significant increase in bookings, but the reduction in
                   no-shows has had a direct impact on our bottom line. The
                   system is intuitive for both our staff and customers, and the
                   data we're collecting is helping us make more informed
@@ -412,12 +419,16 @@ const RestaurantBookingCaseStudy = () => {
               improve operational efficiency.
             </p>
 
-            <Link
-              to="/contact"
+            <a
+              href="#top"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="bg-white text-[#2e7d32] text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
 
           <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-white/10 rounded-full flex items-center justify-center">
@@ -430,90 +441,7 @@ const RestaurantBookingCaseStudy = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
-            <p className="text-[#575757] text-base mt-4">
-              UK-based business growth consultancy specializing in payment
-              solutions, business funding, and restaurant booking apps.
-            </p>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Services</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/services" className="text-[#575757] text-base block">
-                Payment Solutions
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Business Funding
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Booking Apps
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Consultancy
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Company</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/about" className="text-[#575757] text-base block">
-                About Us
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-[#575757] text-base block"
-              >
-                Testimonials
-              </Link>
-              <Link to="/blog" className="text-[#575757] text-base block">
-                Blog
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[250px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
-
-            <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
-              <p className="text-[#575757] text-base">
-                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full h-0 border-t border-[#e0e0e0] mt-[50px]"></div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
-          <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
-          </p>
-
-          <div className="flex space-x-[30px]">
-            <Link
-              to="/privacy-policy"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-of-service"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

@@ -11,6 +11,16 @@ const ContactPage = lazy(() => import("./components/ContactPage"));
 const TestimonialsPage = lazy(() => import("./components/TestimonialsPage"));
 const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./components/TermsOfService"));
+const BlogPage = lazy(() => import("./pages/BlogPage"));
+const FutureOfPaymentSolutions = lazy(
+  () => import("./pages/blog/FutureOfPaymentSolutions"),
+);
+const SecuringBusinessFunding = lazy(
+  () => import("./pages/blog/SecuringBusinessFunding"),
+);
+const RevolutionizingRestaurantBookings = lazy(
+  () => import("./pages/blog/RevolutionizingRestaurantBookings"),
+);
 
 function App() {
   return (
@@ -31,6 +41,19 @@ function App() {
           <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route
+            path="/blog/future-of-payment-solutions"
+            element={<FutureOfPaymentSolutions />}
+          />
+          <Route
+            path="/blog/securing-business-funding"
+            element={<SecuringBusinessFunding />}
+          />
+          <Route
+            path="/blog/revolutionizing-restaurant-bookings"
+            element={<RevolutionizingRestaurantBookings />}
+          />
           {import.meta.env.VITE_TEMPO && <Route path="/tempobook/*" />}
         </Routes>
         {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}

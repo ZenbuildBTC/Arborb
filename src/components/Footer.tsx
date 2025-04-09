@@ -64,7 +64,7 @@ const Footer = () => {
 
       <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
         <p className="text-[#575757] text-sm">
-          © 2023 Arbor Pay Go. All rights reserved.
+          © 2025 Arbor Pay Go. All rights reserved.
         </p>
 
         <div className="flex space-x-[30px]">

@@ -1,30 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronRight, ArrowLeft } from "lucide-react";
 import SEOHead from "../SEOHead.jsx";
 import MobileMenu from "../MobileMenu";
+import Footer from "../Footer";
 
 const PaymentSolutionCaseStudy = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full bg-white overflow-hidden">
       <SEOHead
-        title="Case Study: Retail Chain Payment Solution | Arbor"
-        description="How Arbor helped a UK retail chain streamline their payment processes, reduce transaction fees, and improve customer experience with our innovative payment solutions."
+        title="Case Study: Retail Chain Payment Solution | Arbor Pay Go"
+        description="How Arbor Pay Go helped a UK retail chain streamline their payment processes, reduce transaction fees, and improve customer experience with our innovative payment solutions."
         keywords="payment solution case study, retail payment processing, UK payment system implementation, contactless payment terminals, payment gateway integration"
         canonicalUrl="https://arbor.com/case-studies/payment-solution"
         schema={`
           {
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "How a UK Retail Chain Streamlined Payments with Arbor's Solutions",
-            "description": "Case study of how Arbor implemented an integrated payment solution for a retail chain, resulting in 15% cost savings and improved customer satisfaction.",
+            "headline": "How a UK Retail Chain Streamlined Payments with Arbor Pay Go's Solutions",
+            "description": "Case study of how Arbor Pay Go implemented an integrated payment solution for a retail chain, resulting in 15% cost savings and improved customer satisfaction.",
             "image": "https://arbor.com/images/case-studies/payment-solution.jpg",
-            "datePublished": "2023-05-15",
+            "datePublished": "2025-05-15",
             "author": {
               "@type": "Organization",
-              "name": "Arbor"
+              "name": "Arbor Pay Go"
             }
           }
         `}
@@ -32,7 +37,7 @@ const PaymentSolutionCaseStudy = () => {
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -88,6 +93,10 @@ const PaymentSolutionCaseStudy = () => {
         <Link
           to="/solutions"
           className="flex items-center text-[#2e7d32] font-medium hover:underline"
+          onClick={(e) => {
+            // Ensure it navigates to the top of the solutions page
+            window.scrollTo(0, 0);
+          }}
         >
           <ArrowLeft className="w-4 h-4 mr-2" /> Back to Solutions
         </Link>
@@ -106,7 +115,8 @@ const PaymentSolutionCaseStudy = () => {
           </div>
 
           <h1 className="text-3xl md:text-5xl font-bold text-center mb-[30px]">
-            How a UK Retail Chain Streamlined Payments with Arbor's Solutions
+            How a UK Retail Chain Streamlined Payments with Arbor Pay Go's
+            Solutions
           </h1>
 
           <p className="w-full md:w-[800px] text-lg md:text-xl font-medium leading-relaxed text-[#575757] text-center mb-[40px]">
@@ -170,7 +180,7 @@ const PaymentSolutionCaseStudy = () => {
               </h2>
 
               <p className="text-[#575757] text-lg leading-[32px] mb-[30px]">
-                After a thorough analysis of the client's needs, Arbor
+                After a thorough analysis of the client's needs, Arbor Pay Go
                 implemented a tailored payment solution that included:
               </p>
 
@@ -288,7 +298,7 @@ const PaymentSolutionCaseStudy = () => {
 
               <div className="border-l-4 border-[#2e7d32] pl-6 py-2 mb-[30px]">
                 <p className="text-[#1e1e1e] text-lg italic">
-                  "Arbor's payment solution has transformed our retail
+                  "Arbor Pay Go's payment solution has transformed our retail
                   operations. Not only are we saving significantly on
                   transaction fees, but our customers are enjoying a much
                   smoother checkout experience. The centralized reporting has
@@ -379,126 +389,19 @@ const PaymentSolutionCaseStudy = () => {
                 </p>
               </div>
 
-              <Link
-                to="/contact"
+              <a
+                href="#top"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="w-full bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] flex items-center justify-center"
               >
                 Discuss Your Payment Needs{" "}
                 <ChevronRight className="w-5 h-5 ml-2" />
-              </Link>
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Related Case Studies */}
-      <section className="w-full px-4 md:px-[152px] py-[80px]">
-        <h2 className="text-[#1e1e1e] text-3xl font-bold text-center mb-[50px]">
-          Explore More Case Studies
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-          <Link to="/case-studies/business-funding" className="group">
-            <div className="bg-white rounded-[20px] overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.05)] transition-transform duration-300 group-hover:transform group-hover:scale-[1.02]">
-              <div className="h-[200px] relative overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=80"
-                  alt="Business Funding Case Study"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:transform group-hover:scale-[1.05]"
-                />
-                <div className="absolute inset-0 bg-[#2e7d32]/10"></div>
-              </div>
-
-              <div className="p-[30px]">
-                <div className="w-[120px] h-[30px] bg-[#2e7d32]/10 rounded flex items-center justify-center mb-[15px]">
-                  <span className="text-[#2e7d32] text-sm font-semibold uppercase">
-                    CASE STUDY
-                  </span>
-                </div>
-
-                <h3 className="text-[#1e1e1e] text-xl font-bold mb-[15px]">
-                  How We Helped a Startup Secure £500K in Funding
-                </h3>
-
-                <p className="text-[#575757] text-base mb-[20px]">
-                  A tech startup's journey to securing the capital needed for
-                  expansion
-                </p>
-
-                <div className="flex items-center text-[#2e7d32] font-semibold">
-                  Read Case Study <ChevronRight className="w-5 h-5 ml-1" />
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link to="/case-studies/restaurant-booking" className="group">
-            <div className="bg-white rounded-[20px] overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.05)] transition-transform duration-300 group-hover:transform group-hover:scale-[1.02]">
-              <div className="h-[200px] relative overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80"
-                  alt="Restaurant Booking App Case Study"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:transform group-hover:scale-[1.05]"
-                />
-                <div className="absolute inset-0 bg-[#2e7d32]/10"></div>
-              </div>
-
-              <div className="p-[30px]">
-                <div className="w-[120px] h-[30px] bg-[#2e7d32]/10 rounded flex items-center justify-center mb-[15px]">
-                  <span className="text-[#2e7d32] text-sm font-semibold uppercase">
-                    CASE STUDY
-                  </span>
-                </div>
-
-                <h3 className="text-[#1e1e1e] text-xl font-bold mb-[15px]">
-                  Restaurant Chain Increases Bookings by 45%
-                </h3>
-
-                <p className="text-[#575757] text-base mb-[20px]">
-                  How our booking app transformed operations for a popular
-                  restaurant group
-                </p>
-
-                <div className="flex items-center text-[#2e7d32] font-semibold">
-                  Read Case Study <ChevronRight className="w-5 h-5 ml-1" />
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link to="/case-studies/ai-website" className="group">
-            <div className="bg-white rounded-[20px] overflow-hidden shadow-[0px_10px_30px_rgba(0,0,0,0.05)] transition-transform duration-300 group-hover:transform group-hover:scale-[1.02]">
-              <div className="h-[200px] relative overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?w=600&q=80"
-                  alt="AI Website Case Study"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:transform group-hover:scale-[1.05]"
-                />
-                <div className="absolute inset-0 bg-[#2e7d32]/10"></div>
-              </div>
-
-              <div className="p-[30px]">
-                <div className="w-[120px] h-[30px] bg-[#2e7d32]/10 rounded flex items-center justify-center mb-[15px]">
-                  <span className="text-[#2e7d32] text-sm font-semibold uppercase">
-                    CASE STUDY
-                  </span>
-                </div>
-
-                <h3 className="text-[#1e1e1e] text-xl font-bold mb-[15px]">
-                  Boutique Sees 60% Traffic Increase with AI Website
-                </h3>
-
-                <p className="text-[#575757] text-base mb-[20px]">
-                  How our free AI-built website transformed a local boutique's
-                  online presence
-                </p>
-
-                <div className="flex items-center text-[#2e7d32] font-semibold">
-                  Read Case Study <ChevronRight className="w-5 h-5 ml-1" />
-                </div>
-              </div>
-            </div>
-          </Link>
         </div>
       </section>
 
@@ -515,12 +418,16 @@ const PaymentSolutionCaseStudy = () => {
               your business reduce costs and improve customer experience.
             </p>
 
-            <Link
-              to="/contact"
+            <a
+              href="#top"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="bg-white text-[#2e7d32] text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
             >
               Get in Touch
-            </Link>
+            </a>
           </div>
 
           <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] bg-white/10 rounded-full flex items-center justify-center">
@@ -533,87 +440,7 @@ const PaymentSolutionCaseStudy = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
-            <p className="text-[#575757] text-base mt-4">
-              UK-based business growth consultancy specializing in payment
-              solutions, business funding, and restaurant booking apps.
-            </p>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Services</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/services" className="text-[#575757] text-base block">
-                Payment Solutions
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Business Funding
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Booking Apps
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Consultancy
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Company</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/about" className="text-[#575757] text-base block">
-                About Us
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-[#575757] text-base block"
-              >
-                Testimonials
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[250px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
-
-            <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
-              <p className="text-[#575757] text-base">
-                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full h-0 border-t border-[#e0e0e0] mt-[50px]"></div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
-          <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
-          </p>
-
-          <div className="flex space-x-[30px]">
-            <Link
-              to="/privacy-policy"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-of-service"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
