@@ -14,7 +14,7 @@ const ArborWebsite = () => {
         title="Arbor Pay Go | UK Business Growth Consultancy for Payment Solutions & Funding"
         description="UK-based consultancy specializing in payment solutions, business funding, and restaurant booking apps for SMEs and hospitality businesses."
         keywords="business consultancy UK, payment solutions, business funding, restaurant booking apps, SME consultancy, hospitality technology"
-        canonicalUrl="https://arbor.com"
+        canonicalUrl="https://arborpaygo.com"
       />
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
@@ -88,6 +88,7 @@ const ArborWebsite = () => {
             <Link
               to="/contact"
               className="w-full md:w-[192px] h-[60px] md:h-[76px] bg-[#2e7d32] rounded shadow-[0px_15px_26px_0px_rgba(0,0,0,0.03)] text-white text-xl font-semibold flex items-center justify-center"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Get Started
             </Link>
@@ -205,8 +206,8 @@ const ArborWebsite = () => {
             <h3 className="text-white text-2xl font-bold mt-6">Efficiency</h3>
 
             <p className="text-white text-xl font-medium mt-4">
-              Our restaurant booking apps and payment solutions streamline your
-              operations, saving you time and resources.
+              Our restaurant booking apps streamline operations and enhance
+              customer experience, saving you time and resources.
             </p>
           </div>
 
@@ -221,130 +222,9 @@ const ArborWebsite = () => {
             </h3>
 
             <p className="text-[#575757] text-xl font-medium mt-4">
-              With years of experience in the UK market, our consultants provide
-              expert guidance for SMEs and hospitality businesses.
+              Our team of experts brings years of industry experience to help
+              you navigate complex financial and technological landscapes.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* AI Websites Section */}
-      <section className="w-full px-4 md:px-[155px] py-[60px] bg-[#f9f9f9]">
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
-          <div className="w-full md:w-[600px]">
-            <h2 className="text-[#1e1e1e] text-3xl md:text-4xl font-bold mb-[30px]">
-              Free AI-Built Websites for Retail Businesses
-            </h2>
-
-            <p className="text-[#575757] text-lg md:text-xl leading-[32px] mb-[30px]">
-              Arbor Pay Go is proud to offer{" "}
-              <span className="font-bold text-[#2e7d32]">
-                free AI-built websites
-              </span>{" "}
-              for retail businesses in the UK. Our cutting-edge AI technology
-              creates professional, responsive brochure websites that showcase
-              your products and services effectively.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[20px] mb-[30px]">
-              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
-                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
-                  5 Pages Free
-                </h4>
-                <p className="text-[#575757] text-base">
-                  Get up to 5 professionally designed pages at no cost to your
-                  business.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
-                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
-                  Additional Pages
-                </h4>
-                <p className="text-[#575757] text-base">
-                  Need more content? Add 5 more pages for just £200.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
-                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
-                  Mobile Responsive
-                </h4>
-                <p className="text-[#575757] text-base">
-                  All websites are fully responsive and look great on any
-                  device.
-                </p>
-              </div>
-
-              <div className="bg-white rounded-[15px] p-[20px] shadow-[0px_5px_15px_rgba(0,0,0,0.05)]">
-                <h4 className="text-[#1e1e1e] text-lg font-bold mb-[10px]">
-                  Quick Turnaround
-                </h4>
-                <p className="text-[#575757] text-base">
-                  Get your professional website up and running in days, not
-                  weeks.
-                </p>
-              </div>
-            </div>
-
-            <Link
-              to="/contact"
-              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
-            >
-              Get Your Free Website
-            </Link>
-          </div>
-
-          <div className="w-full md:w-[500px] h-[400px] md:h-[500px] relative">
-            <div className="w-full h-full bg-white rounded-[20px] shadow-[0px_20px_50px_rgba(0,0,0,0.1)] p-[20px] relative overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?w=800&q=80"
-                alt="AI Website Design"
-                className="w-full h-full object-cover rounded-[10px]"
-              />
-              <div className="absolute inset-0 bg-[#2e7d32]/10 rounded-[10px]"></div>
-              <div className="absolute bottom-0 left-0 w-full bg-white/80 p-[20px]">
-                <h3 className="text-[#2e7d32] text-2xl font-bold">
-                  AI-Powered Design
-                </h3>
-                <p className="text-[#575757] text-lg">
-                  Modern websites for retail businesses
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="w-full px-4 md:px-[155px] py-[60px]">
-        <div className="w-full h-auto md:h-[400px] bg-[#2e7d32] rounded-tl-[35px] rounded-tr-lg rounded-bl-lg rounded-br-[35px] px-6 md:px-[75px] py-10 md:py-[68px] flex flex-col md:flex-row justify-between">
-          <div className="w-full md:max-w-[626px]">
-            <h2 className="text-white text-4xl font-bold leading-tight">
-              Ready to grow your business with Arbor Pay Go?
-            </h2>
-
-            <p className="text-white/90 text-xl font-medium mt-6 mb-10">
-              Contact us today to learn how our consultancy services can help
-              your business thrive.
-            </p>
-
-            <Link
-              to="/contact"
-              className="w-full md:w-[200px] h-[60px] bg-white rounded flex items-center justify-center"
-            >
-              <span className="text-[#2e7d32] text-xl font-semibold">
-                Contact Us
-              </span>
-            </Link>
-          </div>
-
-          <div className="relative hidden md:block">
-            <div className="w-[350px] h-[350px] bg-[#4caf50] rounded-full opacity-30"></div>
-            <div className="w-[250px] h-[250px] bg-[#4caf50] rounded-full absolute top-[50px] left-[50px] opacity-50"></div>
-            <div className="w-[150px] h-[150px] bg-white rounded-full absolute top-[100px] left-[100px] flex items-center justify-center">
-              <span className="text-[#2e7d32] text-5xl">🌳</span>
-            </div>
           </div>
         </div>
       </section>

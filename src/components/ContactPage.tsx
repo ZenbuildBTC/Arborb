@@ -222,6 +222,7 @@ const ContactPage = () => {
               <button
                 type="submit"
                 className="w-full h-[60px] bg-[#2e7d32] rounded-[10px] text-white text-xl font-semibold flex items-center justify-center"
+                onClick={() => setTimeout(() => window.scrollTo(0, 0), 1500)}
               >
                 Send Message <Send className="w-5 h-5 ml-2" />
               </button>

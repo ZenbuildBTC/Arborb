@@ -3,6 +3,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import SEOHead from "./SEOHead.jsx";
 import MobileMenu from "./MobileMenu";
+import Footer from "./Footer";
 
 const TermsOfService = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,15 +11,15 @@ const TermsOfService = () => {
   return (
     <div className="w-full bg-white overflow-hidden">
       <SEOHead
-        title="Terms of Service | Arbor UK Business Consultancy"
-        description="Read the terms and conditions governing the use of Arbor's services, website, and products."
+        title="Terms of Service | Arbor Pay Go UK Business Consultancy"
+        description="Read the terms and conditions governing the use of Arbor Pay Go's services, website, and products."
         keywords="terms of service, terms and conditions, legal terms, business consultancy terms, service agreement"
-        canonicalUrl="https://arbor.com/terms-of-service"
+        canonicalUrl="https://arborpaygo.com/terms-of-service"
       />
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -78,7 +79,7 @@ const TermsOfService = () => {
           </h1>
 
           <p className="w-full md:w-[800px] mt-[20px] text-lg md:text-xl font-medium leading-relaxed text-[#575757] text-center">
-            Last Updated: June 1, 2023
+            Last Updated: June 1, 2024
           </p>
         </div>
       </section>
@@ -91,10 +92,10 @@ const TermsOfService = () => {
               1. Introduction
             </h2>
             <p className="text-[#575757] text-lg mb-[15px]">
-              Welcome to Arbor ("Company", "we", "our", "us")! These Terms of
-              Service ("Terms", "Terms of Service") govern your use of our
-              website located at www.arbor.com (together or individually
-              "Service") operated by Arbor.
+              Welcome to Arbor Pay Go ("Company", "we", "our", "us")! These
+              Terms of Service ("Terms", "Terms of Service") govern your use of
+              our website located at www.arborpaygo.com (together or
+              individually "Service") operated by Arbor Pay Go.
             </p>
             <p className="text-[#575757] text-lg">
               Our Privacy Policy also governs your use of our Service and
@@ -121,7 +122,7 @@ const TermsOfService = () => {
               newsletters, marketing or promotional materials and other
               information we may send. However, you may opt out of receiving
               any, or all, of these communications from us by following the
-              unsubscribe link or by emailing us at contact@arbor.com.
+              unsubscribe link or by emailing us at contact@arborpaygo.com.
             </p>
           </div>
 
@@ -151,11 +152,11 @@ const TermsOfService = () => {
             <p className="text-[#575757] text-lg mb-[15px]">
               The Service and its original content (excluding content provided
               by users), features and functionality are and will remain the
-              exclusive property of Arbor and its licensors. The Service is
-              protected by copyright, trademark, and other laws of both the
+              exclusive property of Arbor Pay Go and its licensors. The Service
+              is protected by copyright, trademark, and other laws of both the
               United Kingdom and foreign countries. Our trademarks and trade
               dress may not be used in connection with any product or service
-              without the prior written consent of Arbor.
+              without the prior written consent of Arbor Pay Go.
             </p>
           </div>
 
@@ -206,18 +207,18 @@ const TermsOfService = () => {
               7. Limitation of Liability
             </h2>
             <p className="text-[#575757] text-lg mb-[15px]">
-              In no event shall Arbor, nor its directors, employees, partners,
-              agents, suppliers, or affiliates, be liable for any indirect,
-              incidental, special, consequential or punitive damages, including
-              without limitation, loss of profits, data, use, goodwill, or other
-              intangible losses, resulting from (i) your access to or use of or
-              inability to access or use the Service; (ii) any conduct or
-              content of any third party on the Service; (iii) any content
-              obtained from the Service; and (iv) unauthorized access, use or
-              alteration of your transmissions or content, whether based on
-              warranty, contract, tort (including negligence) or any other legal
-              theory, whether or not we have been informed of the possibility of
-              such damage.
+              In no event shall Arbor Pay Go, nor its directors, employees,
+              partners, agents, suppliers, or affiliates, be liable for any
+              indirect, incidental, special, consequential or punitive damages,
+              including without limitation, loss of profits, data, use,
+              goodwill, or other intangible losses, resulting from (i) your
+              access to or use of or inability to access or use the Service;
+              (ii) any conduct or content of any third party on the Service;
+              (iii) any content obtained from the Service; and (iv) unauthorized
+              access, use or alteration of your transmissions or content,
+              whether based on warranty, contract, tort (including negligence)
+              or any other legal theory, whether or not we have been informed of
+              the possibility of such damage.
             </p>
           </div>
 
@@ -265,10 +266,11 @@ const TermsOfService = () => {
               If you have any questions about these Terms, please contact us:
             </p>
             <p className="text-[#575757] text-lg mb-[5px]">
-              Email: legal@arbor.com
+              Email: legal@arborpaygo.com
             </p>
             <p className="text-[#575757] text-lg mb-[5px]">
-              Postal address: 123 Business Street, London, UK
+              Postal address: 167-169 Great Portland Street, 5th Floor, London,
+              W1W 5PF
             </p>
             <p className="text-[#575757] text-lg">
               Telephone number: +44 (0) 123 456 7890
@@ -277,92 +279,7 @@ const TermsOfService = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
-            <p className="text-[#575757] text-base mt-4">
-              UK-based business growth consultancy specializing in payment
-              solutions, business funding, and restaurant booking apps.
-            </p>
-
-            <div className="mt-[30px] flex space-x-4">
-              <Facebook className="w-6 h-6 text-[#2e7d32]" />
-              <Twitter className="w-6 h-6 text-[#2e7d32]" />
-              <Instagram className="w-6 h-6 text-[#2e7d32]" />
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Services</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/services" className="text-[#575757] text-base block">
-                Payment Solutions
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Business Funding
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Booking Apps
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Consultancy
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Company</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/about" className="text-[#575757] text-base block">
-                About Us
-              </Link>
-              <Link to="/about" className="text-[#575757] text-base block">
-                Our Team
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-[#575757] text-base block"
-              >
-                Testimonials
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[250px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
-
-            <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">contact@arbor.com</p>
-              <p className="text-[#575757] text-base">+44 (0) 123 456 7890</p>
-              <p className="text-[#575757] text-base">London, United Kingdom</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full h-0 border-t border-[#e0e0e0] mt-[50px]"></div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
-          <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
-          </p>
-
-          <div className="flex space-x-[30px]">
-            <Link to="/privacy-policy" className="text-[#575757] text-sm">
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-of-service"
-              className="text-[#2e7d32] text-sm font-semibold"
-            >
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

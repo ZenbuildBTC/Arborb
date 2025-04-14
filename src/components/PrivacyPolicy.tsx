@@ -3,6 +3,7 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import SEOHead from "./SEOHead.jsx";
 import MobileMenu from "./MobileMenu";
+import Footer from "./Footer";
 
 const PrivacyPolicy = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,15 +11,15 @@ const PrivacyPolicy = () => {
   return (
     <div className="w-full bg-white overflow-hidden">
       <SEOHead
-        title="Privacy Policy | Arbor UK Business Consultancy"
-        description="Learn about how Arbor collects, uses, and protects your personal information in compliance with UK data protection laws."
+        title="Privacy Policy | Arbor Pay Go UK Business Consultancy"
+        description="Learn about how Arbor Pay Go collects, uses, and protects your personal information in compliance with UK data protection laws."
         keywords="privacy policy, data protection, GDPR compliance, business consultancy privacy, UK data protection"
-        canonicalUrl="https://arbor.com/privacy-policy"
+        canonicalUrl="https://arborpaygo.com/privacy-policy"
       />
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -78,7 +79,7 @@ const PrivacyPolicy = () => {
           </h1>
 
           <p className="w-full md:w-[800px] mt-[20px] text-lg md:text-xl font-medium leading-relaxed text-[#575757] text-center">
-            Last Updated: June 1, 2023
+            Last Updated: June 1, 2024
           </p>
         </div>
       </section>
@@ -91,11 +92,11 @@ const PrivacyPolicy = () => {
               1. Introduction
             </h2>
             <p className="text-[#575757] text-lg mb-[15px]">
-              At Arbor ("we," "our," or "us"), we respect your privacy and are
-              committed to protecting your personal data. This privacy policy
-              will inform you about how we look after your personal data when
-              you visit our website and tell you about your privacy rights and
-              how the law protects you.
+              At Arbor Pay Go ("we," "our," or "us"), we respect your privacy
+              and are committed to protecting your personal data. This privacy
+              policy will inform you about how we look after your personal data
+              when you visit our website and tell you about your privacy rights
+              and how the law protects you.
             </p>
             <p className="text-[#575757] text-lg">
               This privacy policy applies to all personal data collected through
@@ -229,7 +230,7 @@ const PrivacyPolicy = () => {
             </ul>
             <p className="text-[#575757] text-lg">
               If you wish to exercise any of the rights set out above, please
-              contact us at privacy@arbor.com.
+              contact us at privacy@arborpaygo.com.
             </p>
           </div>
 
@@ -260,10 +261,11 @@ const PrivacyPolicy = () => {
               practices, please contact us in the following ways:
             </p>
             <p className="text-[#575757] text-lg mb-[5px]">
-              Email address: privacy@arbor.com
+              Email address: privacy@arborpaygo.com
             </p>
             <p className="text-[#575757] text-lg mb-[5px]">
-              Postal address: 123 Business Street, London, UK
+              Postal address: 167-169 Great Portland Street, 5th Floor, London,
+              W1W 5PF
             </p>
             <p className="text-[#575757] text-lg">
               Telephone number: +44 (0) 123 456 7890
@@ -272,92 +274,7 @@ const PrivacyPolicy = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
-            <p className="text-[#575757] text-base mt-4">
-              UK-based business growth consultancy specializing in payment
-              solutions, business funding, and restaurant booking apps.
-            </p>
-
-            <div className="mt-[30px] flex space-x-4">
-              <Facebook className="w-6 h-6 text-[#2e7d32]" />
-              <Twitter className="w-6 h-6 text-[#2e7d32]" />
-              <Instagram className="w-6 h-6 text-[#2e7d32]" />
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Services</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/services" className="text-[#575757] text-base block">
-                Payment Solutions
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Business Funding
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Booking Apps
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Consultancy
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Company</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/about" className="text-[#575757] text-base block">
-                About Us
-              </Link>
-              <Link to="/about" className="text-[#575757] text-base block">
-                Our Team
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-[#575757] text-base block"
-              >
-                Testimonials
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[250px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
-
-            <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">contact@arbor.com</p>
-              <p className="text-[#575757] text-base">+44 (0) 123 456 7890</p>
-              <p className="text-[#575757] text-base">London, United Kingdom</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full h-0 border-t border-[#e0e0e0] mt-[50px]"></div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
-          <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
-          </p>
-
-          <div className="flex space-x-[30px]">
-            <Link
-              to="/privacy-policy"
-              className="text-[#2e7d32] text-sm font-semibold"
-            >
-              Privacy Policy
-            </Link>
-            <Link to="/terms-of-service" className="text-[#575757] text-sm">
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

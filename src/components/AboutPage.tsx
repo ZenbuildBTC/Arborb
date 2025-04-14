@@ -13,7 +13,7 @@ const AboutPage = () => {
         title="About Arbor Pay Go | UK Business Growth Consultancy"
         description="We're a UK-based consultancy dedicated to helping businesses grow through innovative payment solutions, strategic funding, and cutting-edge hospitality technology."
         keywords="about Arbor Pay Go, UK business consultancy, payment solutions experts, business funding specialists, hospitality technology consultants, SME growth partners"
-        canonicalUrl="https://arbor.com/about"
+        canonicalUrl="https://arborpaygo.com/about"
       />
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
@@ -99,7 +99,7 @@ const AboutPage = () => {
             </div>
 
             <h2 className="text-[#1e1e1e] text-4xl font-bold mb-[30px]">
-              Growing Together Since 2021
+              Growing Together Since 2024
             </h2>
 
             <p className="text-[#575757] text-xl leading-[32px] mb-[30px]">

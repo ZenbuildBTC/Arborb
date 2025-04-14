@@ -149,7 +149,8 @@ const SolutionsPage = () => {
 
             <Link
               to="/contact"
-              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block w-full md:w-auto text-center"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn More
             </Link>
@@ -263,7 +264,8 @@ const SolutionsPage = () => {
 
             <Link
               to="/contact"
-              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block w-full md:w-auto text-center"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn More
             </Link>
@@ -336,7 +338,8 @@ const SolutionsPage = () => {
 
             <Link
               to="/contact"
-              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block w-full md:w-auto text-center"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn More
             </Link>
@@ -454,7 +457,8 @@ const SolutionsPage = () => {
 
             <Link
               to="/contact"
-              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block w-full md:w-auto text-center"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Get Your Free Website
             </Link>
@@ -579,7 +583,8 @@ const SolutionsPage = () => {
 
             <Link
               to="/contact"
-              className="bg-white text-[#2e7d32] text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              className="bg-white text-[#2e7d32] text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block w-full md:w-auto text-center"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Schedule a Consultation
             </Link>

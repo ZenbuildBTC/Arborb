@@ -10,21 +10,22 @@ import {
 import { Link } from "react-router-dom";
 import SEOHead from "./SEOHead.jsx";
 import MobileMenu from "./MobileMenu";
+import Footer from "./Footer";
 
 const ServicesPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="w-full bg-white overflow-hidden">
       <SEOHead
-        title="Services | Arbor UK Business Consultancy"
+        title="Services | Arbor Pay Go UK Business Consultancy"
         description="Comprehensive business growth services including payment solutions, business funding, restaurant booking apps, and expert consultancy for UK businesses."
         keywords="business services UK, payment processing UK, business funding solutions, restaurant booking system, SME consultancy services, hospitality technology UK"
-        canonicalUrl="https://arbor.com/services"
+        canonicalUrl="https://arborpaygo.com/services"
       />
       {/* Navbar */}
       <nav className="w-full h-[60px] px-4 md:px-[152px] py-[15px] flex justify-between items-center">
         <Link to="/" className="text-[#2e7d32] text-2xl font-bold">
-          Arbor
+          Arbor Pay Go
         </Link>
 
         <div className="hidden md:flex space-x-[60px]">
@@ -140,6 +141,7 @@ const ServicesPage = () => {
             <Link
               to="/contact"
               className="flex items-center text-[#2e7d32] font-semibold text-lg"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn more <ChevronRight className="w-5 h-5 ml-1" />
             </Link>
@@ -190,6 +192,7 @@ const ServicesPage = () => {
             <Link
               to="/contact"
               className="flex items-center text-[#2e7d32] font-semibold text-lg"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn more <ChevronRight className="w-5 h-5 ml-1" />
             </Link>
@@ -240,6 +243,7 @@ const ServicesPage = () => {
             <Link
               to="/contact"
               className="flex items-center text-[#2e7d32] font-semibold text-lg"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn more <ChevronRight className="w-5 h-5 ml-1" />
             </Link>
@@ -290,6 +294,7 @@ const ServicesPage = () => {
             <Link
               to="/contact"
               className="flex items-center text-[#2e7d32] font-semibold text-lg"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Learn more <ChevronRight className="w-5 h-5 ml-1" />
             </Link>
@@ -400,9 +405,9 @@ const ServicesPage = () => {
             </div>
 
             <p className="text-[#575757] text-lg italic">
-              "Arbor's booking app has transformed our reservation process.
-              We've seen a 30% increase in bookings and our staff can manage
-              tables more efficiently than ever before."
+              "Arbor Pay Go's booking app has transformed our reservation
+              process. We've seen a 30% increase in bookings and our staff can
+              manage tables more efficiently than ever before."
             </p>
           </div>
 
@@ -426,9 +431,10 @@ const ServicesPage = () => {
             </div>
 
             <p className="text-[#575757] text-lg italic">
-              "The payment solution Arbor implemented for our retail stores has
-              streamlined our operations and improved customer satisfaction. The
-              team was professional and knowledgeable throughout the process."
+              "The payment solution Arbor Pay Go implemented for our retail
+              stores has streamlined our operations and improved customer
+              satisfaction. The team was professional and knowledgeable
+              throughout the process."
             </p>
           </div>
 
@@ -452,7 +458,7 @@ const ServicesPage = () => {
             </div>
 
             <p className="text-[#575757] text-lg italic">
-              "Arbor helped us secure the funding we needed to scale our
+              "Arbor Pay Go helped us secure the funding we needed to scale our
               business at a critical time. Their expertise in the UK market and
               connections with lenders made all the difference."
             </p>
@@ -478,7 +484,7 @@ const ServicesPage = () => {
 
         <div className="max-w-[900px] mx-auto bg-white rounded-[20px] p-[40px] shadow-[0px_10px_30px_rgba(0,0,0,0.05)]">
           <p className="text-[#575757] text-lg md:text-xl leading-[32px] mb-[30px]">
-            Arbor is proud to offer{" "}
+            Arbor Pay Go is proud to offer{" "}
             <span className="font-bold text-[#2e7d32]">
               completely free AI-built websites
             </span>{" "}
@@ -570,6 +576,7 @@ const ServicesPage = () => {
             <Link
               to="/contact"
               className="bg-[#2e7d32] text-white text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Request Your Free Website
             </Link>
@@ -593,6 +600,7 @@ const ServicesPage = () => {
             <Link
               to="/contact"
               className="bg-white text-[#2e7d32] text-lg font-semibold py-[15px] px-[30px] rounded-[10px] shadow-[0px_10px_20px_rgba(0,0,0,0.1)] inline-block"
+              onClick={() => window.scrollTo(0, 0)}
             >
               Get in Touch
             </Link>
@@ -608,90 +616,7 @@ const ServicesPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#f5f5f5] px-4 md:px-[155px] pt-[60px] pb-[40px]">
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
-          <div className="w-full md:w-[350px]">
-            <h2 className="text-[#2e7d32] text-2xl font-bold">Arbor</h2>
-            <p className="text-[#575757] text-base mt-4">
-              UK-based business growth consultancy specializing in payment
-              solutions, business funding, and restaurant booking apps.
-            </p>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Services</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/services" className="text-[#575757] text-base block">
-                Payment Solutions
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Business Funding
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Booking Apps
-              </Link>
-              <Link to="/services" className="text-[#575757] text-base block">
-                Consultancy
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[200px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Company</h3>
-
-            <div className="mt-4 space-y-2">
-              <Link to="/about" className="text-[#575757] text-base block">
-                About Us
-              </Link>
-              <Link
-                to="/testimonials"
-                className="text-[#575757] text-base block"
-              >
-                Testimonials
-              </Link>
-              <Link to="/blog" className="text-[#575757] text-base block">
-                Blog
-              </Link>
-            </div>
-          </div>
-
-          <div className="w-[250px]">
-            <h3 className="text-[#1e1e1e] text-lg font-bold">Contact</h3>
-
-            <div className="mt-4 space-y-2">
-              <p className="text-[#575757] text-base">hello@arborpaygo.com</p>
-              <p className="text-[#575757] text-base">
-                167-169 Great Portland Street, 5th Floor, London, W1W 5PF
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="w-full h-0 border-t border-[#e0e0e0] mt-[50px]"></div>
-
-        <div className="flex flex-col md:flex-row justify-between mt-[24px] space-y-4 md:space-y-0">
-          <p className="text-[#575757] text-sm">
-            © 2023 Arbor. All rights reserved.
-          </p>
-
-          <div className="flex space-x-[30px]">
-            <Link
-              to="/privacy-policy"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              to="/terms-of-service"
-              className="text-[#575757] text-sm hover:text-[#2e7d32]"
-            >
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
